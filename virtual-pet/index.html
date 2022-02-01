@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Plant Pet</title>
+    <title>Virtual Pet</title>
 </head>
 
 <body style="height:550px; width:1250px; border:4px solid goldenrod;">
     <div style="text-align:center">
         <h2>This is Bartholemeow, your new color changing kitten.</h2>
         <p>Make sure to feed her, pet her, and play with her!</p>
-        <img src="images/bartholomeowimages/perfectbartholomeow.png" alt="Happy Bartholemeow" style="width:280px">
+        <img id="pet-img" src="images/bartholomeowimages/perfectbartholomeow.png" alt="Happy Bartholemeow" style="height:180px">
         <p id="pet-condition">Bartholomeow is perfectly content!</p>
     </div>
     <div style="position:absolute; top:370px; left:200px; text-align:center;">
@@ -22,13 +22,13 @@
         <button id="belly-button" onclick="feedPet();">Feed me!</button>
     </div>
     <div style="position:absolute; top:370px; left:540px; text-align:center;">
-        <h3>Bartholomeow's feelings</h3>
+        <h3>Bartholomeow's comfort</h3>
         <meter id="mood-meter" min="0" max="10" value="10"></meter>
         <p id="mood-paragraph">10</p>
         <button id="love-button" onclick="petPet();">Pet me!</button>
     </div>
     <div style="position:absolute; top:370px; left:870px; text-align:center;">
-        <h3>Bartholomeow's energy</h3>
+        <h3>Bartholomeow's mood</h3>
         <meter id="energy-meter" min="0" max="10" value="10"></meter>
         <p id="energy-paragraph">10</p>
         <button id="play-button" onclick="playPet();">Play with me!</button>
