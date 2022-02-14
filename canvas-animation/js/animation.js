@@ -11,7 +11,7 @@ let playerX = 250;
 let playerY = 250;
 let playerXDirection = 0
 let playerYDirection = 0
-let playerSpeed = 2;
+let playerSpeed = 3;
 const PADDLE_WIDTH = 100;
 const PADDLE_HEIGHT = 20;
 
@@ -58,6 +58,16 @@ function checkBallCollide() {
 
     if ((ballX > 500 - BALL_RADIUS) || (ballX < 0 + BALL_RADIUS)) {
         ballXDirection = ballXDirection * -1;
+    }
+
+    //check to see if i hit the paddle
+    if (ballX + BALL_RADIUS >= playerX &&
+        ballX - BALL_RADIUS <= playerX + PADDLE_WIDTH &&
+        ballY + BALL_RADIUS >= playerY &&
+        ballY - BALL_RADIUS <= playerY + PADDLE_HEIGHT) {
+        ballYDirection = ballYDirection * -1.01;
+        //ballYDirection *=1
+        //ballYDirection = -ballYDirection
     }
 }
 
