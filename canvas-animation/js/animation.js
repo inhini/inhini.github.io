@@ -1,6 +1,7 @@
 // get canvas item
 let myCanvas = document.getElementById("my-canvas");
 let ctx = myCanvas.getContext("2d");
+let emoji = document.getElementById("emoji");
 
 // get paragraph items
 let keydownOutput = document.getElementById("keydown-output");
@@ -14,6 +15,10 @@ let playerYDirection = 0
 let playerSpeed = 3;
 const PADDLE_WIDTH = 100;
 const PADDLE_HEIGHT = 20;
+
+//image settings
+const IMG_WIDTH = 40;
+const IMG_HEIGHT = 40;
 
 //ball position and movement
 let ballX = 50;
@@ -44,6 +49,10 @@ function drawBall() {
     ctx.fill();
 }
 
+function drawImage() {
+    ctx.drawImage(emoji, ballX, ballY, IMG_WIDTH, IMG_HEIGHT);
+}
+
 function moveBall() {
     ctx.beginPath()
     ballY += ballYDirection;
@@ -52,18 +61,18 @@ function moveBall() {
 
 function checkBallCollide() {
     // check vertical wall
-    if ((ballY > 500 - BALL_RADIUS) || (ballY < 0 + BALL_RADIUS)) {
+    if ((ballY > 500 - IMG_WIDTH) || (ballY < 0)) {
         ballYDirection = ballYDirection * -1;
     }
 
-    if ((ballX > 500 - BALL_RADIUS) || (ballX < 0 + BALL_RADIUS)) {
+    if ((ballX > 500 - IMG_HEIGHT) || (ballX < 0)) {
         ballXDirection = ballXDirection * -1;
     }
 
     //check to see if i hit the paddle
-    if (ballX + BALL_RADIUS >= playerX &&
+    if (ballX + IMG_HEIGHT >= playerX &&
         ballX - BALL_RADIUS <= playerX + PADDLE_WIDTH &&
-        ballY + BALL_RADIUS >= playerY &&
+        ballY + IMG_HEIGHT >= playerY &&
         ballY - BALL_RADIUS <= playerY + PADDLE_HEIGHT) {
         ballYDirection = ballYDirection * -1.01;
         //ballYDirection *=1
@@ -78,7 +87,8 @@ function refreshUI() {
     //animate ball
     checkBallCollide();
     moveBall();
-    drawBall();
+    //drawBall();
+    drawImage();
 }
 
 //when key is pressed
