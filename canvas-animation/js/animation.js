@@ -13,8 +13,8 @@ let playerY = 250;
 let playerXDirection = 0
 let playerYDirection = 0
 let playerSpeed = 3;
-const PADDLE_WIDTH = 100;
-const PADDLE_HEIGHT = 20;
+const PADDLE_WIDTH = 75;
+const PADDLE_HEIGHT = 45;
 
 //image settings
 const IMG_WIDTH = 40;

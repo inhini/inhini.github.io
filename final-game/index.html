@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Game</title>
+</head>
+
+<body onkeydown="keyPressed(event)" onkeyup="keyReleased(event)">
+    <canvas id="my-canvas" width="700" height="500" style="border:1px solid black"></canvas>
+    <p id="keydown-output"> </p>
+    <p id="keyup-output"></p>
+    <img id="fish" src="images/flying-fish.png" alt="fish" style="visibility: hidden;">
+    <img id="rock" src="images/rock.jpg" alt="rock" style="visibility: hidden;">
+    <img id="kelp" src="images/kelp.png" alt="kelp" style="visibility: hidden">
+    <script src="js/game.js"></script>
+</body>
+
+</html>
