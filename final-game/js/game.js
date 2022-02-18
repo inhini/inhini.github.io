@@ -7,6 +7,7 @@ let kelp = document.getElementById("kelp");
 let keydownOutput = document.getElementById("keydown-output");
 let keyupOutput = document.getElementById("keyup-output");
 
+//fish
 let fishY = 250;
 const FISH_X = 100;
 let fishYDirection = 0;
@@ -14,17 +15,23 @@ let playerSpeed = 3;
 const FISH_WIDTH = 75;
 const FISH_HEIGHT = 45;
 
+
+//rock
 let rockX = 200;
 const ROCK_Y = -10;
 let rockXDirection = 0;
 const ROCK_HEIGHT = 180;
 const ROCK_WIDTH = 180;
 
+
+//kelp
 let kelpX = 450;
 const KELP_Y = 210
 let kelpXDirection = 0
 const KELP_HEIGHT = 300
 const KELP_WIDTH = 150
+
+
 
 function drawFish() {
     ctx.beginPath()
