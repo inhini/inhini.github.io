@@ -8,13 +8,19 @@
     <title>Fish Game</title>
 </head>
 
-<body onkeydown="keyPressed(event)" onkeyup="keyReleased(event)">
-    <canvas id="my-canvas" width="700" height="500" style="border:1px solid black"></canvas>
+<body onkeydown="keyPressed(event)" onkeyup="keyReleased(event)" style="background-color:lightblue;" ;>
+    <h1 style="font-size: 160%; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:darkslateblue; text-align: left;"> Welcome to the Flying Fish Game!</h1>
+    <canvas id="my-canvas" width="700" height="500" style="border:1px solid black; background-color: white;"></canvas>
     <p id="keydown-output"> </p>
     <p id="keyup-output"></p>
     <img id="fish" src="images/flying-fish.png" alt="fish" style="visibility: hidden;">
     <img id="rock" src="images/rock.jpg" alt="rock obstacle" style="visibility: hidden;">
     <img id="kelp" src="images/kelp.png" alt="kelp obstacle" style="visibility: hidden">
+    <img id="coral" src="images/coral.png" alt="coral obstacle" style="visibility: hidden">
+    <img id="fish-school" src="images/school-of-fish.png" alt="fish school obstacle" style="visibility: hidden">
+    <img id="stalactite" src="images/stalactite.png" alt="stalactite obstacle" style="visibility: hidden">
+    <img id="clam" src="images/clam.png" alt="clam obstacle" style="visibility: hidden">
+    <img id="finish" src="images/finish.png" alt="finish line" style="visibility: hidden">
     <script src="js/game.js"></script>
 </body>
 
