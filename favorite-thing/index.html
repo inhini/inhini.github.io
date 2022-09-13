@@ -12,6 +12,7 @@
         
         h2 {
             text-align: center;
+            font-size: 20px;
         }
         
         p {
@@ -37,24 +38,32 @@
             padding: 8px;
         }
         
-        .center {
+        .pic {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
         }
+        
+        #box-1 {
+            background-color: blanchedalmond;
+        }
+        
+        body {
+            background-image: url(images/koi\ bg.webp);
+        }
     </style>
     <title>My favorite things about school</title>
 </head>
 
-<body style="background-color:aliceblue">
+<body>
     <h1>My Favorite Things About School at <a href="https://www.eastsideprep.org/">Eastside Prep</a></h1>
     <h2>(and my least favorites, too)</h2>
     <br>
-    <img src="images/eps.jpg" alt="Eastside Preparatory School" width="600" class="center">
+    <img src="images/eps.jpg" alt="Eastside Preparatory School" width="600" class="pic">
     <br>
     <p>Lets start with my favorites!</p>
-    <ul>
+    <ul style="background-color:aliceblue">
         <li>My friends, of course</li>
         <li>The teachers, who are understanding and kind</li>
         <li>The buildings, which are clean and beautiful</li>
@@ -71,7 +80,7 @@
     <br>
     <br>
     <p>Even though EPS is so great, there are still some things I don't really like :(</p>
-    <table>
+    <table id="box-1">
         <tr>
             <th>What I don't like</th>
             <th>Why?</th>
