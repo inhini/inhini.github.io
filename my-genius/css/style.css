@@ -1,0 +1,58 @@
+.background {
+    margin: 25px 50px;
+    padding: 50px;
+    background-color: rgb(187, 211, 202);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(50, 42, 58);
+}
+
+.content {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(50, 42, 58);
+    padding: 15px 20px;
+    margin: auto;
+    background-color: rgb(205, 189, 221, 0.721);
+    border: 2px dashed whitesmoke;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(201, 172, 204);
+    border: 2px solid whitesmoke;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.navbar li a:hover {
+    background-color: rgb(182, 153, 203);
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 20px 30px;
+    border: 2px solid whitesmoke;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+}
