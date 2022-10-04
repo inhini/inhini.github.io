@@ -1,0 +1,134 @@
+.navbar {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(201, 172, 204);
+    border: 2px solid whitesmoke;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar li a:hover {
+    background-color: rgb(182, 153, 203);
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 35% 35% 30%;
+}
+
+.grid-item {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.main-image {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.main1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.support1 {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: red;
+}
+
+.support2 {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: red;
+}
+
+.sidenav {
+    grid-column: 3;
+    grid-row: 3 / span 3;
+    background-color: red;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+
+.header {
+    grid-column: 2;
+    padding: 20px;
+}
+
+.navmenu2 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding: 20px;
+}
+
+.image2 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    padding: 20px;
+}
+
+.section1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    padding: 20px;
+}
+
+.section2 {
+    grid-column: 1 / span 1;
+    grid-row: 4;
+    padding: 20px;
+}
+
+.section3 {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 20px;
+}
+
+.section4 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    padding: 20px;
+}
+
+.resources {
+    grid-column: 3;
+    grid-row: 3 / span 3;
+    padding: 20px;
+}
