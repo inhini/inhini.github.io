@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo</title>
+</head>
+
+<body id="body" style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('Warning! You are navigating away from my page!')">school website</a>
+
+    <hr>
+    <h2>What's your favorite font?</h2>
+    <button onclick="document.getElementById('body').style.fontFamily='Times New Roman,Times,serif';" style="font-family:'Times New Roman', Times, serif">Times New Roman</button>
+    <button onclick="document.getElementById('body').style.fontFamily='Courier New,Courier,monospace';" style="font-family:'Courier New', Courier, monospace">Courier New</button>
+    <button onclick="document.getElementById('body').style.fontFamily='Verdana,Geneva,Tahoma,sans-serif';" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Back to Verdana!</button>
+
+    <h2>What color do you like?</h2>
+    <button onclick="document.getElementById('body').style.backgroundColor='darkseagreen'">Green!</button>
+    <button onclick="document.getElementById('body').style.backgroundColor='plum'">Purple!</button>
+    <button onclick="document.getElementById('body').style.backgroundColor='white'">Just white...</button>
+
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='nana nana nana nana batman!'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <h2>two truths and a lie</h2>
+    <p>Which one is the lie?</p>
+    <ol>
+        <li>I fell off my bed and broke my shoulder</li>
+        <li>My cat has diarrhea</li>
+        <li>My brother loves Abraham Lincoln</li>
+    </ol>
+    <p id="lie"></p>
+
+    <button onclick="document.getElementById('lie').innerHTML='the lie is number two!'; document.getElementById('lie').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('lie').style.display='none'">Hide!</button>
+
+    <hr>
+    <h2>How do we change images with javascript?</h2>
+    <img src="images/popcat1.jpg" alt="popcat humgry" id="image">
+    <br>
+    <button onclick="document.getElementById('image').src='images/popcat2.jpg'">feed the cat!</button>
+    <button onclick="document.getElementById('image').src='images/popcat1.jpg'">no more food!</button>
+
+    <hr>
+    <h2>How do i change css styles with a button?</h2>
+    <p id="alice" style="font-size: 20px;">hi im alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake: eat me!</button>
+    <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='40px'">Potion: drink me!</button>
+    <button onclick="normalAlice();">Foul smelling goop: eat me!</button>
+
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <script>
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name')
+            let name = prompt("What is your name?")
+                //decide what to do
+            if (name === "batman") {
+                nameParagraph.innerHTML = "welcome to the batcave sir."
+            } else {
+                nameParagraph.innerHTML = "Saa! Welcome, " + name + "!"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
