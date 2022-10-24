@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth and Lie Game - Sophie Yu</title>
+</head>
+
+<body>
+    <h1> Sophie's Truth and a Lie Game </h1>
+    <p id="greet" style="font-size:x-large">Welcome!</p>
+    <h2> Introductions </h2>
+
+    <form action="" id="name-form">
+        <label for="fname">First name:</label> <br>
+        <input type="text" name="greet" id="fname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="greet" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet();">
+    <hr>
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia" id="chocolate">
+        <label for="chocolate">Dark chocolate</label><br>
+        <input type="radio" name="trivia" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia" id="honey">
+        <label for="honey">Honey</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="trivia();">
+    <hr>
+    <h2>Two Truths and a Lie</h2>
+    <p>Which of these are the lie?
+    </p>
+    <p id="lie-answer"></p>
+    <form action="">
+        <input type="radio" name="lies" id="truth1">
+        <label for="truth1">I used to have a pet rabbit.</label><br>
+        <input type="radio" name="lies" id="truth2">
+        <label for="truth2">I hate Shang in Mulan 2.</label><br>
+        <input type="radio" name="lies" id="lie">
+        <label for="lie">I've never broken a bone.</label><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="lies();">
+    <script src="js/game.js"></script>
+</body>
+
+</html>
