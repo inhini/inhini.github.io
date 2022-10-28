@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-sm bg-primary nav-dark">
+        <!--add a logo-->
+        <a href="#" class="navbar-brand">
+            <img src="images/logo.png" style="width: 45px">
+        </a>
+
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-active" href="#">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-active" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/mountain.jpg" alt="A lush mountain" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2><span class="badge bg-secondary">A beautiful lush mountaintop.</span></h2>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/beach.jpg" alt="A beach" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2><span class="badge bg-secondary">A beach with white sand and clear waters.</span></h2>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/water.jpg" alt="A rocky beach" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2><span class="badge bg-secondary">A rocky shore.</span></h2>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+    </div>
+    <div class="container p-5 m-5 mx-auto text-white border">
+        <h1>My first bootstrap page</h1>
+        <p>This part is inside a container class</p>
+        <p>It takes up the entire width of the screen</p>
+    </div>
+
+    <!--student challenge: create another container with different padding, colors, margin-->
+    <div class="container p-3 m-2 mx-auto bg-light text-warning border">
+        <h1>Student challenge</h1>
+        <p>This text has different padding, colors, and margins</p>
+    </div>
+    <!--bootstrap grid-->
+    <!--student challenge: change the grid to 5 columns: spanning 4, 4, 2, 1, 1-->
+    <div class="row text-white p-3 m-5">
+        <div class="col-md-4">
+            <h2>Bootstrap is for HTML</h2>
+            <p>grid sucks</p>
+            <a class="btn btn-primary" href="#" role="button">More on HTML</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Bootstrap is for CSS</h2>
+            <p>To make things look pretty</p>
+            <a class="btn btn-success" href="#" role="button">More on HTML</a>
+        </div>
+        <div class="col-md-2">
+            <h2>Bootstrap is for JS</h2>
+            <p>To do cool things like slide shows</p>
+            <a class="btn btn-info" href="#" role="button">More on HTML</a>
+        </div>
+        <div class="col-md-1">
+            <h2>divs suck</h2>
+            <p>aaaaaaaa</p>
+            <a class="btn btn-danger" href="#" role="button">More on HTML</a>
+        </div>
+        <div class="col-md-1">
+            <h2>grid is hard</h2>
+            <p>aaaaaaaaaaaaaaaaaa</p>
+            <a class="btn btn-warning" href="#" role="button">More on HTML</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
