@@ -1,0 +1,152 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    text-align: center;
+    padding: 17px 25px;
+    margin-top: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.navbar li a:hover {
+    background-color: rgb(100, 122, 141);
+}
+
+.current {
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.grid-item {
+    text-align: center;
+    font-size: 30px;
+    font-family: altivo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navmenu {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+.banner {
+    grid-column: 1 / span 4;
+    grid-row: 2
+}
+
+.volunteer {
+    background-color: white;
+    padding: 15px;
+}
+
+.volunteer-pic {
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.volunteer-text {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.volunteer-button {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.donate-pic {
+    grid-column: 3;
+    grid-row: 3;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.donate-text {
+    grid-column: 4;
+    grid-row: 3;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.donate-button {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.aacr-pic {
+    position: relative;
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    margin-top: 40px;
+}
+
+.aacr-text {
+    position: absolute;
+    text-align: left;
+    padding-right: 700px;
+    top: 30%;
+    left: 7%;
+}
+
+.aaaip-pic {
+    position: relative;
+    grid-column: 1 / span 4;
+    grid-row: 6;
+    margin-top: 1px;
+}
+
+.aaaip-text {
+    position: absolute;
+    text-align: left;
+    padding-right: 700px;
+    top: 30%;
+    left: 7%;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: utopia-std, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 14px;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    background-color: #c0d6bd;
+    font-size: 14px;
+    font-family: altivo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 150px;
+    border: none;
+    border-radius: 12px;
+}
