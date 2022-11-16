@@ -54,8 +54,10 @@
 }
 
 .volunteer {
-    background-color: white;
+    background-color: rgb(205, 218, 223);
     padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 70px;
 }
 
 .volunteer-pic {
@@ -91,16 +93,11 @@
     margin-top: 20px;
 }
 
-.donate-button {
-    grid-column: 3 / span 2;
-    grid-row: 4;
-}
-
 .aacr-pic {
     position: relative;
     grid-column: 1 / span 4;
-    grid-row: 5;
-    margin-top: 40px;
+    grid-row: 4;
+    margin-top: 20px;
 }
 
 .aacr-text {
@@ -114,7 +111,7 @@
 .aaaip-pic {
     position: relative;
     grid-column: 1 / span 4;
-    grid-row: 6;
+    grid-row: 5;
     margin-top: 1px;
 }
 
@@ -124,6 +121,85 @@
     padding-right: 700px;
     top: 30%;
     left: 7%;
+}
+
+.full-logo {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.about-pic {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.about-heading {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+
+.about-body {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+}
+
+.learn-desc {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
+
+.learn-list {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+
+.learn-image1 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.learn-text1 {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+}
+
+.learn-image2 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+.learn-text2 {
+    grid-column: 3 / span 2;
+    grid-row: 6;
+}
+
+.learn-image3 {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+}
+
+.learn-text3 {
+    grid-column: 3 / span 2;
+    grid-row: 7;
+}
+
+.volunteer-intro {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
+
+.donation {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+.donation-text {
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    left: 45%;
+    margin-right: 15%;
+    padding: 3% 3%;
 }
 
 h3 {
@@ -146,7 +222,55 @@ button {
     font-family: altivo, sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 10px 150px;
     border: none;
     border-radius: 12px;
+}
+
+.login-button {
+    background-color: #c0d6bd;
+    font-size: 14px;
+    font-family: altivo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    border-radius: 12px;
+}
+
+.button2 {
+    padding: 10px 150px;
+}
+
+.button1 {
+    padding: 10px 25px;
+}
+
+.donate-button {
+    font-family: altivo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 25px;
+}
+
+.donate1form {
+    text-align: center;
+}
+
+.donate2form {
+    text-align: center;
+}
+
+.body {
+    background-color: rgb(136, 156, 166);
+}
+
+.login-logo {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.login-form {
+    grid-column: 2 / span 2;
+    grid-row: 3;
 }
