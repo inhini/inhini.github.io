@@ -13,11 +13,11 @@ function login() {
 
 function donate1() {
 
-    let fiveSelected = document.getElementById("5");
-    let tenSelected = document.getElementById("10")
-    let twentyfiveSelected = document.getElementById("25")
-    let fiftySelected = document.getElementById("50")
-    let hundredSelected = document.getElementById("100")
+    let fiveSelected = document.getElementById("5").checked
+    let tenSelected = document.getElementById("10").checked
+    let twentyfiveSelected = document.getElementById("25").checked
+    let fiftySelected = document.getElementById("50").checked
+    let hundredSelected = document.getElementById("100").checked
 
     if (fiveSelected) {
         alert("Thank you for donating $5 to support PetPartners!")
@@ -34,11 +34,11 @@ function donate1() {
 
 function donate2() {
 
-    let mfiveSelected = document.getElementById("5m")
-    let mtenSelected = document.getElementById("10m")
-    let mtwentyfiveSelected = document.getElementById("25m")
-    let mfiftySelected = document.getElementById("50m")
-    let mhundredSelected = document.getElementById("100m")
+    let mfiveSelected = document.getElementById("5m").checked
+    let mtenSelected = document.getElementById("10m").checked
+    let mtwentyfiveSelected = document.getElementById("25m").checked
+    let mfiftySelected = document.getElementById("50m").checked
+    let mhundredSelected = document.getElementById("100m").checked
 
     if (mfiveSelected) {
         alert("Thank you for your monthly donation of $5!")
